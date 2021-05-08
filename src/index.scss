@@ -1,0 +1,134 @@
+$background: #1a202c;
+$onBackground: #ffffff;
+$surface: #2d3748;
+$primary: #4fd1c5;
+$onPrimary: #ffffff;
+$secondary: #f6ad55;
+$onSecondary: #000000;
+$black: #000000;
+$white: #ffffff;
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background-color: $background;
+}
+
+img {
+  width: 100%;
+}
+
+.type {
+  &-h1 {
+    color: $primary;
+    font-weight: 300;
+    font-size: 95px;
+    letter-spacing: -1.25px;
+  }
+  &-h2 {
+    color: $onBackground;
+    font-weight: 300;
+    font-size: 59px;
+    letter-spacing: -0.5px;
+  }
+  &-h3 {
+    color: $onBackground;
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: 0px;
+  }
+  &-h4 {
+    color: $onBackground;
+    font-weight: 400;
+    font-size: 34px;
+    letter-spacing: 0.25px;
+  }
+  &-h5 {
+    color: $onBackground;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.25px;
+  }
+  &-b1 {
+    color: $onBackground;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+  &-btn {
+    color: $onBackground;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1.25px;
+  }
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1024px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+  margin: 3rem auto;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: $background;
+
+  color: $onBackground;
+  &__item {
+    color: $onBackground;
+    height: 100%;
+    margin-right: 2rem;
+    transition: all ease-in 100ms;
+    &:hover {
+      transform: translate(0px, -2px);
+    }
+  }
+  &__btn {
+    background-color: $primary;
+    color: $onPrimary;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.25rem;
+  }
+  &__logo {
+    color: $onBackground;
+  }
+}
+
+.hero {
+  &__icon {
+    margin-right: 1.5rem;
+  }
+  &__cursor {
+    background-color: $primary;
+    display: inline-block;
+    width: 30px;
+    height: 90px;
+    margin-left: 0.5rem;
+    transition: all ease-in 150ms;
+  }
+}
