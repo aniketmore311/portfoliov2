@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "title": "Everhustle",
+      "description": "One app for all your productivity needs",
+      "technologies": [
+        "react",
+        "javascript",
+        "express",
+        "typescript",
+        "mongoDB",
+        "docker"
+      ],
+      "demoLink": "https://everhustle.netlify.app/",
+      "codeLink": "https://github.com/DevelopersLeague/EverHustle-server"
+    },
+    {
+      "title": "Studnet",
+      "description": "Forum for college discussions and announcements",
+      "technologies": ["django", "html", "css", "javascript"],
+      "demoLink": "https://stud-net.herokuapp.com/",
+      "codeLink": "https://github.com/DevelopersLeague/StudNet"
+    }
+  ]
+}

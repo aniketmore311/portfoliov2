@@ -32,42 +32,49 @@ img {
     font-weight: 300;
     font-size: 95px;
     letter-spacing: -1.25px;
+    line-height: 1.5;
   }
   &-h2 {
     color: $onBackground;
     font-weight: 300;
     font-size: 59px;
     letter-spacing: -0.5px;
+    line-height: 1.5;
   }
   &-h3 {
     color: $onBackground;
     font-weight: 400;
     font-size: 48px;
     letter-spacing: 0px;
+    line-height: 1.5;
   }
   &-h4 {
     color: $onBackground;
     font-weight: 400;
     font-size: 34px;
     letter-spacing: 0.25px;
+    line-height: 1.5;
   }
   &-h5 {
     color: $onBackground;
     font-weight: 400;
     font-size: 24px;
     letter-spacing: 0.25px;
+    line-height: 1.5;
   }
   &-b1 {
     color: $onBackground;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.5px;
+    line-height: 1.5;
   }
   &-btn {
     color: $onBackground;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 1.25px;
+    line-height: 1.5;
   }
 }
 
@@ -116,12 +123,23 @@ img {
   }
   &__logo {
     color: $onBackground;
+    &--last{
+      margin-right: 3rem;
+    }
   }
 }
 
 .hero {
+  width: 100%;
   &__icon {
     margin-right: 1.5rem;
+  }
+  &__title {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+  }
+  &__description {
+    margin-bottom: 4rem;
   }
   &__cursor {
     background-color: $primary;
@@ -130,5 +148,65 @@ img {
     height: 90px;
     margin-left: 0.5rem;
     transition: all ease-in 150ms;
+  }
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  &__title {
+    margin-bottom: 2rem;
+  }
+}
+
+.project-card {
+  background-color: $surface;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+  &__description {
+    margin-bottom: 2rem;
+  }
+}
+
+.tech-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  &__item {
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border-color: $onBackground;
+    border-style: solid;
+    border-width: 0.125rem;
+    border-radius: 0.25rem;
+  }
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  &__btn {
+    padding: 1rem 2rem;
+    background-color: $primary;
+    color: $onPrimary;
+    border-radius: 0.25rem;
+    margin-right: 1rem;
+    transition: all ease-in 100ms;
+    &:hover {
+      transform: translate(0px, -2px);
+    }
   }
 }
