@@ -11,7 +11,11 @@ $white: #ffffff;
 html {
   box-sizing: border-box;
 }
-
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 a {
   text-decoration: none;
 }
@@ -71,7 +75,7 @@ img {
   }
   &-btn {
     color: $onBackground;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 14px;
     letter-spacing: 1.25px;
     line-height: 1.5;
@@ -80,13 +84,13 @@ img {
 
 .container {
   display: flex;
-  width: 90%;
-  max-width: 1024px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: 90%;
+  max-width: 1024px;
   padding: 1rem;
-  margin: 3rem auto;
+  margin: 7rem auto;
 }
 
 .navbar {
@@ -123,7 +127,7 @@ img {
   }
   &__logo {
     color: $onBackground;
-    &--last{
+    &--last {
       margin-right: 3rem;
     }
   }
@@ -135,7 +139,6 @@ img {
     margin-right: 1.5rem;
   }
   &__title {
-    margin-top: 6rem;
     margin-bottom: 1rem;
   }
   &__description {
@@ -154,7 +157,7 @@ img {
 .project-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
   &__title {
@@ -186,6 +189,7 @@ img {
   &__item {
     padding: 0.5rem 1rem;
     margin-right: 1rem;
+    margin-bottom: 0.5rem;
     border-color: $onBackground;
     border-style: solid;
     border-width: 0.125rem;
@@ -208,5 +212,64 @@ img {
     &:hover {
       transform: translate(0px, -2px);
     }
+  }
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+// less than 640
+@media screen and (max-width: 640px) {
+  .navbar {
+    &__item {
+      &--hide-sm {
+        display: none;
+      }
+    }
+  }
+  // .container {
+  //   margin-top: 1rem;
+  // }
+  .btn-group {
+    &__icon {
+      display: none;
+    }
+  }
+  .tech-list {
+    display: none;
+  }
+  .hero {
+    &__description {
+      display: none;
+    }
+  }
+}
+
+// less than 1024
+@media screen and (max-width: 1024px) {
+  .hero {
+    &__cursor {
+      display: none;
+    }
+    &__icon {
+      display: none;
+    }
+  }
+  .btn-group {
+    &__icon {
+      display: none;
+    }
+  }
+}
+
+//more than 640
+@media screen and (min-width: 640px) {
+  .social-list {
+    display: none;
   }
 }
